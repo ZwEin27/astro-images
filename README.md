@@ -38,6 +38,11 @@ An astronomy club would like to have a website to show off their members’ astr
 
 ## Html Pages
 
+### index.html
+
+•   provide links to other pages.
+•   provide common functions like search and login
+
 ### user.html
 
 •   presents astro-images for users to view.
