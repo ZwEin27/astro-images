@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>Phtographer Upload Page</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="expires" content="0" />
+
+    <link href='http://fonts.useso.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+
+    <!-- Loading Bootstrap -->
+    <link href="css/vendor/bootstrap.min.css" rel="stylesheet">   
+    <!-- Loading Flat UI -->
+    <link href="css/flat-ui.min.css" rel="stylesheet">
+
+    <!-- Loading Main CSS -->
+    <link href="css/vendor/colors.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+    <link rel="stylesheet" href="css/photographer.css"> <!-- Resource style -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/vendor/input-file-component.css">
+
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="js/vendor/html5shiv.js"></script>
+      <script src="js/vendor/respond.min.js"></script>
+    <![endif]-->
+    <script>(function(e,t,n){var r=e.querySelectorAll("html")[0];r.className=r.className.replace(/(^|\s)no-js(\s|$)/,"$1js$2")})(document,window,0);</script>
+  </head>
+  <body>
+      <header class="cd-header">
+        <div class="top_menu_container">
+          <div class="top_menu_content_left">
+              <div class="top_menu_logo">
+                AstroImages
+              </div>
+              <div class="top_menu_search">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Search Images" />
+                  <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                </div>
+              </div>
+          </div>
+
+          <div class="top_menu_content_right">
+              <div class="top_menu_action_set">
+                <a href="#"><i class="fa fa-inverse fa-heart-o"></i></a>
+                <a href="#"><i class="fa fa-inverse fa-download"></i></a>
+                <a href="#"><i class="fa fa-inverse fa-user"></i>  ZwEin</a>
+              </div>
+
+              <!-- <div class="top_menu_profile">
+                  Welcome, <a href="#">Username</i></a>
+              </div> -->
+          </div>
+
+        </div>
+      </header>
+
+      <main class="cd-main-content">
+
+        <div class="cd-tab-filter-wrapper">
+          <div class="cd-tab-filter">
+            
+            <div class="cd-tab-title">
+              <h3> Upload Images</h3>
+            </div>
+          </div> <!-- cd-tab-filter -->
+        </div> <!-- cd-tab-filter-wrapper -->
+
+
+        <section class="cd-gallery">
+          <div class="content">
+            <div class="box">
+              <input type="file" name="file-5[]" id="file-5" class="inputfile inputfile-4" data-multiple-caption="{count} files selected" multiple />
+              <label for="file-5"><figure><svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"/></svg></figure> <span>Choose a file&hellip;</span></label>
+            </div>
+
+          </div>
+        </section> <!-- cd-gallery -->
+       
+        <div class="cd-filter">
+          <form>
+            <!-- <div class="cd-filter-block">
+              <h4>Search</h4>
+              
+              <div class="cd-filter-content">
+                <input type="search" placeholder="search images">
+              </div> 
+            </div> -->
+
+            <div class="cd-filter-block">
+              <h4>My Account</h4>
+
+              <ul class="cd-filter-content cd-filters list">
+                <li>
+                    <a href="#">Edit Profile</a>
+                </li>
+                <li>
+                    <a href="#">Change Password</a>
+                </li>
+                <li>
+                    <a href="#">Notification</a>
+                </li>
+                <li>
+                    <a href="#">Following</a>
+                </li>
+                
+                    
+                   
+              </ul> <!-- cd-filter-content -->
+            </div> <!-- cd-filter-block -->
+
+            <div class="cd-filter-block">
+              <h4>Images</h4>
+
+              <ul class="cd-filter-content cd-filters list">
+                <li>
+                    <a href="#">Manage Image Set</a>
+                </li>
+                <li>
+                    <a href="#" style="color: #29BF57;">Upload</a>
+                </li>
+              </ul> <!-- cd-filter-content -->
+            </div> <!-- cd-filter-block -->
+
+          
+
+          </form>
+
+          <!-- <a href="#0" class="cd-close">Close</a> -->
+        </div> <!-- cd-filter -->
+
+        <a href="#0" class="cd-filter-trigger">Menu</a>
+      </main> <!-- cd-main-content -->
+
+    <!-- jQuery (necessary for Flat UI's JavaScript plugins) -->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="./js/vendor/video.js"></script>
+    <script src="./js/flat-ui.min.js"></script>
+    <script src="./js/vendor/jquery.min.js"></script>
+    <script src="js/jquery.mixitup.min.js"></script>
+    <script src="js/photographer.js"></script> <!-- Resource jQuery -->
+    <script src="js/custom-file-input.js"></script>
+    
+
+  </body>
+</html>
