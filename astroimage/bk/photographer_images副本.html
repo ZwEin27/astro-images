@@ -2,7 +2,7 @@
 <html lang="en" class="no-js">
   <head>
     <meta charset="utf-8">
-    <title>User Main Page</title>
+    <title>Phtographer Images Page</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="expires" content="0" />
@@ -17,8 +17,7 @@
     <!-- Loading Main CSS -->
     <link href="css/vendor/colors.css" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
-    <link rel="stylesheet" href="css/user.css"> <!-- Resource style -->
-    <!-- <link rel="stylesheet" href="css/vendor/preview.css"> -->
+    <link rel="stylesheet" href="css/photographer.css"> <!-- Resource style -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/vendor/font-awesome/css/font-awesome.min.css">
     <link rel="shortcut icon" href="images/favicon.ico">
@@ -61,120 +60,90 @@
       </header>
 
       <main class="cd-main-content">
+
         <div class="cd-tab-filter-wrapper">
           <div class="cd-tab-filter">
-            <ul class="cd-filters">
-              <li class="placeholder"> 
-                <a data-type="all" href="#0">All</a> <!-- selected option on mobile -->
-              </li> 
-              <li class="filter"><a class="selected" href="#0" data-type="all">All</a></li>
-              <li class="filter" data-filter=".color-1"><a href="#0" data-type="color-1">Solar System</a></li>
-              <li class="filter" data-filter=".color-2"><a href="#0" data-type="color-2">Deepsky</a></li>
-            </ul> <!-- cd-filters -->
+            
+            <div class="cd-tab-title">
+              <h3> Image Set: Galaxy</h3>
+            </div>
           </div> <!-- cd-tab-filter -->
         </div> <!-- cd-tab-filter-wrapper -->
+
 
         <section class="cd-gallery">
           <ul>
             <li class="mix color-1 check1 radio2 option3"><img src="images/img-1.jpg" alt="Image 1"></li>
             <li class="mix color-2 check2 radio2 option2"><img src="images/img-2.jpg" alt="Image 2"></li>
-            <li class="mix color-1 check8 radio3 option1"><img src="images/img-3.jpg" alt="Image 3"></li>
+            <li class="mix color-1 check3 radio3 option1"><img src="images/img-3.jpg" alt="Image 3"></li>
             <li class="mix color-1 check3 radio2 option4"><img src="images/img-4.jpg" alt="Image 4"></li>
-            <li class="mix color-1 check7 radio3 option2"><img src="images/img-5.jpg" alt="Image 5"></li>
-            <li class="mix color-2 check7 radio3 option3"><img src="images/img-6.jpg" alt="Image 6"></li>
+            <li class="mix color-1 check1 radio3 option2"><img src="images/img-5.jpg" alt="Image 5"></li>
+            <li class="mix color-2 check2 radio3 option3"><img src="images/img-6.jpg" alt="Image 6"></li>
             <li class="mix color-2 check2 radio2 option1"><img src="images/img-7.jpg" alt="Image 7"></li>
-            <li class="mix color-1 check6 radio3 option4"><img src="images/img-8.jpg" alt="Image 8"></li>
+            <li class="mix color-1 check1 radio3 option4"><img src="images/img-8.jpg" alt="Image 8"></li>
             <li class="mix color-2 check1 radio2 option3"><img src="images/img-9.jpg" alt="Image 9"></li>
-            <li class="mix color-1 check5 radio2 option4"><img src="images/img-10.jpg" alt="Image 10"></li>
+            <li class="mix color-1 check3 radio2 option4"><img src="images/img-10.jpg" alt="Image 10"></li>
             <li class="mix color-1 check3 radio3 option2"><img src="images/img-11.jpg" alt="Image 11"></li>
             <li class="mix color-2 check1 radio3 option1"><img src="images/img-12.jpg" alt="Image 12"></li>
             <li class="gap"></li>
             <li class="gap"></li>
             <li class="gap"></li>
           </ul>
-          <div class="cd-fail-message">No results found</div>
-
-          
         </section> <!-- cd-gallery -->
-
+       
         <div class="cd-filter">
           <form>
             <!-- <div class="cd-filter-block">
               <h4>Search</h4>
               
               <div class="cd-filter-content">
-                <input type="search" placeholder="try to search">
+                <input type="search" placeholder="search images">
               </div> 
             </div> -->
 
             <div class="cd-filter-block">
-              <h4>Category</h4>
+              <h4>My Account</h4>
 
               <ul class="cd-filter-content cd-filters list">
                 <li>
-                  <input class="filter" data-filter=".check1" type="checkbox" id="checkbox1">
-                    <label class="checkbox-label" for="checkbox1">Messier</label>
+                    <a href="#">Edit Profile</a>
                 </li>
-
                 <li>
-                  <input class="filter" data-filter=".check2" type="checkbox" id="checkbox2">
-                  <label class="checkbox-label" for="checkbox2">NGC</label>
+                    <a href="#">Change Password</a>
                 </li>
-
                 <li>
-                  <input class="filter" data-filter=".check3" type="checkbox" id="checkbox3">
-                  <label class="checkbox-label" for="checkbox3">IC</label>
+                    <a href="#">Notification</a>
                 </li>
-
                 <li>
-                  <input class="filter" data-filter=".check4" type="checkbox" id="checkbox3">
-                  <label class="checkbox-label" for="checkbox4">Planets</label>
+                    <a href="#">Following</a>
                 </li>
-
-                <li>
-                  <input class="filter" data-filter=".check5" type="checkbox" id="checkbox3">
-                  <label class="checkbox-label" for="checkbox5">Commets</label>
-                </li>
-
-                <li>
-                  <input class="filter" data-filter=".check6" type="checkbox" id="checkbox3">
-                  <label class="checkbox-label" for="checkbox6">Sharpless</label>
-                </li>
-
-                <li>
-                  <input class="filter" data-filter=".check7" type="checkbox" id="checkbox3">
-                  <label class="checkbox-label" for="checkbox7">Meteoroids</label>
-                </li>
-
-                <li>
-                  <input class="filter" data-filter=".check8" type="checkbox" id="checkbox3">
-                  <label class="checkbox-label" for="checkbox8">Others</label>
-                </li>
-
+                
+                    
+                   
               </ul> <!-- cd-filter-content -->
             </div> <!-- cd-filter-block -->
 
             <div class="cd-filter-block">
-              <h4>Objects</h4>
-              
-              <div class="cd-filter-content">
-                <div class="cd-select cd-filters">
-                  <select class="filter" name="selectThis" id="selectThis">
-                    <option value="">Choose an object</option>
-                    <option value=".option1">Albireo</option>
-                    <option value=".option2">Andromeda Nebula</option>
-                    <option value=".option3">Apple Core or Dumbbell Nebula</option>
-                    <option value=".option4">Black-eye Galaxy</option>
-                  </select>
-                </div> <!-- cd-select -->
-              </div> <!-- cd-filter-content -->
+              <h4>Images</h4>
+
+              <ul class="cd-filter-content cd-filters list">
+                <li>
+                    <a href="#">Manage Image Set</a>
+                </li>
+                <li>
+                    <a href="#">Upload</a>
+                </li>
+              </ul> <!-- cd-filter-content -->
             </div> <!-- cd-filter-block -->
+
+          
 
           </form>
 
+          <!-- <a href="#0" class="cd-close">Close</a> -->
         </div> <!-- cd-filter -->
 
-        <a href="#0" class="cd-filter-trigger">Filters</a>
+        <a href="#0" class="cd-filter-trigger">Menu</a>
       </main> <!-- cd-main-content -->
 
     <!-- jQuery (necessary for Flat UI's JavaScript plugins) -->
@@ -183,8 +152,6 @@
     <script src="./js/flat-ui.min.js"></script>
     <script src="./js/vendor/jquery.min.js"></script>
     <script src="js/jquery.mixitup.min.js"></script>
-    <!-- // <script src="js/velocity.min.js"></script> -->
-    <!-- // <script src="js/preview.js"></script> -->
     <script src="js/photographer.js"></script> <!-- Resource jQuery -->
     
 

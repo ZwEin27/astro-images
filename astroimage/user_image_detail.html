@@ -2,7 +2,7 @@
 <html lang="en" class="no-js">
   <head>
     <meta charset="utf-8">
-    <title>User Main Page</title>
+    <title>User Image Detail</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="expires" content="0" />
@@ -63,16 +63,124 @@
       <main class="cd-main-content">
         <div class="cd-tab-filter-wrapper">
           <div class="cd-tab-filter">
-            <ul class="cd-filters">
-              <li class="placeholder"> 
-                <a data-type="all" href="#0">All</a> <!-- selected option on mobile -->
-              </li> 
-              <li class="filter"><a class="selected" href="#0" data-type="all">All</a></li>
-              <li class="filter" data-filter=".color-1"><a href="#0" data-type="color-1">Solar System</a></li>
-              <li class="filter" data-filter=".color-2"><a href="#0" data-type="color-2">Deepsky</a></li>
-            </ul> <!-- cd-filters -->
+            <div class="row">
+              <div class="cd-tab-title col-sm-3">
+                <h3> Solarsystem Images </h3>
+              </div>
+
+              <div class="cd-tab-attribute col-sm-5">
+                <span> Downloads: <a href="#">94</a></span> 
+                <span> Category: <a href="#">Solarsystem</a></span> 
+              </div>
+
+              <div class="cd-tab-action col-sm-3" style="text-align: right">
+                <a href="#"><i class="fa fa-heart"></i> Favorite</a>
+              </div>
+            </div>
           </div> <!-- cd-tab-filter -->
         </div> <!-- cd-tab-filter-wrapper -->
+
+      
+        <section class="cd-gallery">
+          <row class="uid_size_selection">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+
+              <button class="btn btn-success btn-xs" style="width=160px;">Original</button>
+              <button class="btn btn-success btn-xs" style="width=160px;">Large</button>
+              <button class="btn btn-success btn-xs" style="width=160px;">Medium</button>
+              <button class="btn btn-success btn-xs" style="width=160px;">Small</button>
+            </div>
+            <div class="col-md-3"></div>
+          </row>
+
+          <hr>
+
+          <div class="clear_style"></div>
+
+          <row class="uid_image">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+              <img src="images/img-1.jpg" alt="Image 1">
+            </div>
+            <div class="col-md-3"></div>
+          </row>
+
+          <div class="clear_style"></div>
+          <div class="separator_style"></div>
+
+          <row class="uid_attribute">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <i class="fa fa-user"></i> By 
+                <a href="#">ZwEin</a>
+            </div>
+            <div class="col-md-3"></div>
+          </row>
+
+          <div class="clear_style"></div>
+          <div class="separator_style"></div>
+
+          <row class="uid_attribute">
+            <div class="col-md-3"></div>
+            <div class="col-md-3">
+                <i class="fa fa-map"></i>
+                <a href="#">Location: Los Angeles</a>
+            </div>
+            <div class="col-md-3">
+                <i class="fa fa-calendar"></i>
+                <a href="#">Date: Jan 14, 2016</a>
+            </div>
+            <div class="col-md-3"></div>
+          </row>
+
+          <div class="clear_style"></div>
+          <div class="separator_style"></div>
+
+          <row class="uid_attribute">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <div class="tagsinput-primary">
+                  <input name="tagsinput" class="tagsinput" data-role="tagsinput" value="Galax, LA, Solarsystem" />
+                </div>
+            </div>
+            <div class="col-md-3"></div>
+          </row>
+
+          <row class="uid_related"></row>
+
+
+        </section> <!-- cd-gallery -->
+
+
+        <div class="clear_style"></div>
+
+
+        <section class="cd-gallery">
+          
+          <row class="uid_related">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <h3 style="font-weight: 800; font-size: 24px;">Solarsystem Icon Set</h3>
+            </div>
+            <div class="col-md-3"></div>
+          </row>
+
+          <div class="clear_style"></div>
+          <div class="separator_style"></div>
+
+          <row class="uid_related">
+            <div class="col-md-3"></div>
+            <div class="col-md-6" style="text-align: center;">
+              <button class="btn btn-primary btn-xs" style="width=160px;">View all images in image set</button>
+              <button class="btn btn-primary btn-xs" style="width=160px;"><i class="fa fa-inverse fa-comment"></i> Comments</button>
+            </div>
+            <div class="col-md-3"></div>
+          </row>
+
+        </section>
+
+        <div class="clear_style"></div>
 
         <section class="cd-gallery">
           <ul>
@@ -94,99 +202,21 @@
           </ul>
           <div class="cd-fail-message">No results found</div>
 
-          
-        </section> <!-- cd-gallery -->
 
-        <div class="cd-filter">
-          <form>
-            <!-- <div class="cd-filter-block">
-              <h4>Search</h4>
-              
-              <div class="cd-filter-content">
-                <input type="search" placeholder="try to search">
-              </div> 
-            </div> -->
+        </section>
 
-            <div class="cd-filter-block">
-              <h4>Category</h4>
-
-              <ul class="cd-filter-content cd-filters list">
-                <li>
-                  <input class="filter" data-filter=".check1" type="checkbox" id="checkbox1">
-                    <label class="checkbox-label" for="checkbox1">Messier</label>
-                </li>
-
-                <li>
-                  <input class="filter" data-filter=".check2" type="checkbox" id="checkbox2">
-                  <label class="checkbox-label" for="checkbox2">NGC</label>
-                </li>
-
-                <li>
-                  <input class="filter" data-filter=".check3" type="checkbox" id="checkbox3">
-                  <label class="checkbox-label" for="checkbox3">IC</label>
-                </li>
-
-                <li>
-                  <input class="filter" data-filter=".check4" type="checkbox" id="checkbox3">
-                  <label class="checkbox-label" for="checkbox4">Planets</label>
-                </li>
-
-                <li>
-                  <input class="filter" data-filter=".check5" type="checkbox" id="checkbox3">
-                  <label class="checkbox-label" for="checkbox5">Commets</label>
-                </li>
-
-                <li>
-                  <input class="filter" data-filter=".check6" type="checkbox" id="checkbox3">
-                  <label class="checkbox-label" for="checkbox6">Sharpless</label>
-                </li>
-
-                <li>
-                  <input class="filter" data-filter=".check7" type="checkbox" id="checkbox3">
-                  <label class="checkbox-label" for="checkbox7">Meteoroids</label>
-                </li>
-
-                <li>
-                  <input class="filter" data-filter=".check8" type="checkbox" id="checkbox3">
-                  <label class="checkbox-label" for="checkbox8">Others</label>
-                </li>
-
-              </ul> <!-- cd-filter-content -->
-            </div> <!-- cd-filter-block -->
-
-            <div class="cd-filter-block">
-              <h4>Objects</h4>
-              
-              <div class="cd-filter-content">
-                <div class="cd-select cd-filters">
-                  <select class="filter" name="selectThis" id="selectThis">
-                    <option value="">Choose an object</option>
-                    <option value=".option1">Albireo</option>
-                    <option value=".option2">Andromeda Nebula</option>
-                    <option value=".option3">Apple Core or Dumbbell Nebula</option>
-                    <option value=".option4">Black-eye Galaxy</option>
-                  </select>
-                </div> <!-- cd-select -->
-              </div> <!-- cd-filter-content -->
-            </div> <!-- cd-filter-block -->
-
-          </form>
-
-        </div> <!-- cd-filter -->
-
-        <a href="#0" class="cd-filter-trigger">Filters</a>
       </main> <!-- cd-main-content -->
 
     <!-- jQuery (necessary for Flat UI's JavaScript plugins) -->
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="./js/vendor/video.js"></script>
-    <script src="./js/flat-ui.min.js"></script>
+    
     <script src="./js/vendor/jquery.min.js"></script>
     <script src="js/jquery.mixitup.min.js"></script>
+    <script src="./js/flat-ui.min.js"></script>
+    <script src="./js/vendor/video.js"></script>
     <!-- // <script src="js/velocity.min.js"></script> -->
     <!-- // <script src="js/preview.js"></script> -->
-    <script src="js/photographer.js"></script> <!-- Resource jQuery -->
-    
+    <script src="js/user.js"></script> <!-- Resource jQuery -->
 
   </body>
 </html>

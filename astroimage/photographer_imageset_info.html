@@ -2,7 +2,7 @@
 <html lang="en" class="no-js">
   <head>
     <meta charset="utf-8">
-    <title>Phtographer View Upload Images</title>
+    <title>Phtographer Upload Page</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="expires" content="0" />
@@ -67,7 +67,7 @@
           <div class="cd-tab-filter">
             
             <div class="cd-tab-title">
-              <h3> Image Set Detail</h3>
+              <h3> Image Set Information</h3>
             </div>
           </div> <!-- cd-tab-filter -->
         </div> <!-- cd-tab-filter-wrapper -->
@@ -77,91 +77,79 @@
           <div class="content">
             <form>
               <div class="row">
-                <div class="col-sm-5" style="padding-top: 15px;">
-                  <img src="images/img-1.jpg" alt="Image 1">
+                <div class="col-sm-5">
+                  <div class="form-group">
+                    <label for="imageset_name">Image Set Name</label>
+                    <input type="text" class="form-control" id="imageset_name" placeholder="Name of Image Set">
+                  </div>
                 </div>
                 <div class="col-sm-7">
-                  <div class="form-group">
-                    <label for="imageset_name">Object Name</label>
-                    <input type="text" class="form-control" id="imageset_name" placeholder="Name for Image">
+                  <div class="form_desc">
+                    <p>Pick a name that is unique or describes your icon set. Don’t use generic names like “Flat icons” and leave out “icons” and “icon set” at the end.</p>
                   </div>
-
-                   <div class="form-group">
-                    <label for="imageset_name">Category</label>
-                    <div style="clear:both;height:0;width:0"></div> 
-                    <label class="checkbox-inline"><input type="checkbox" value="">All</label>
-                    <label class="checkbox-inline"><input type="checkbox" value="">Solarsystem</label>
-                    <label class="checkbox-inline"><input type="checkbox" value="">Deepsky</label>
-                  </div>
-
-                  <div class="form-group">
-                    <label for="imageset_name">Description</label>
-                    <textarea class="form-control" rows="5" id="comment" placeholder="Description for this image"></textarea>
-                  </div>
-
-
-                </div>
-              </div>
-
-
-
-              <hr>
-
-              <div class="row">
-                <div class="col-sm-5" style="padding-top: 15px;">
-                  <img src="images/img-2.jpg" alt="Image 2">
-                </div>
-                <div class="col-sm-7">
-                  <div class="form-group">
-                    <label for="imageset_name">Object Name</label>
-                    <input type="text" class="form-control" id="imageset_name" placeholder="Name for Image">
-                  </div>
-
-                   <div class="form-group">
-                    <label for="imageset_name">Category</label>
-                    <div style="clear:both;height:0;width:0"></div> 
-                    <label class="checkbox-inline"><input type="checkbox" value="">All</label>
-                    <label class="checkbox-inline"><input type="checkbox" value="">Solarsystem</label>
-                    <label class="checkbox-inline"><input type="checkbox" value="">Deepsky</label>
-                  </div>
-
-                  <div class="form-group">
-                    <label for="imageset_name">Description</label>
-                    <textarea class="form-control" rows="5" id="comment" placeholder="Description for this image"></textarea>
-                  </div>
-
-
                 </div>
               </div>
 
               <hr>
 
               <div class="row">
-                <div class="col-sm-5" style="padding-top: 15px;">
-                  <img src="images/img-3.jpg" alt="Image 3">
-                </div>
-                <div class="col-sm-7">
-                  <div class="form-group">
-                    <label for="imageset_name">Object Name</label>
-                    <input type="text" class="form-control" id="imageset_name" placeholder="Name for Image">
-                  </div>
-
-                   <div class="form-group">
-                    <label for="imageset_name">Category</label>
-                    <div style="clear:both;height:0;width:0"></div> 
-                    <label class="checkbox-inline"><input type="checkbox" value="">All</label>
-                    <label class="checkbox-inline"><input type="checkbox" value="">Solarsystem</label>
-                    <label class="checkbox-inline"><input type="checkbox" value="">Deepsky</label>
-                  </div>
-
+                <div class="col-sm-5">
                   <div class="form-group">
                     <label for="imageset_name">Description</label>
-                    <textarea class="form-control" rows="5" id="comment" placeholder="Description for this image"></textarea>
+                    <textarea class="form-control" rows="5" id="comment" placeholder="Description for this image set"></textarea>
                   </div>
-
-
+                </div>
+                <div class="col-sm-7">
+                  <div class="form_desc">
+                    <p>Use this field to provide additional information on how to get the most of your image. You can also use this field to provide special information info like "You can use the icons for commercial use, if the link to my website."</p>
+                  </div>
                 </div>
               </div>
+              
+              <hr>
+
+              <div class="row">
+                <div class="col-sm-5">
+                  <div class="form-group">
+                    <label for="imageset_name">Collection</label>
+                    <div style="clear:both;height:0;width:0"></div> 
+                    <div class="btn-group" style="display: block; float: left; margin-left: 20px;">
+                      <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                        Earth <span class="caret"></span>
+                      </button>
+                      <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Test</a></li>
+                        <li><a href="#">Earth</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Create New Collection</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-7">
+                  <div class="form_desc">
+                    <p>A collection is a group of image sets that are in the same style. This grouping will make it easier for users to find similar image sets.</p>
+                  </div>
+                </div>
+              </div>
+
+              <hr>
+              <div class="col-sm-5">
+                  <div class="form-group">
+                    <label for="imageset_name">Tags</label>
+                    <div style="clear:both;height:0;width:0"></div> 
+                    <div class="tagsinput-primary">
+                      <input name="tagsinput" class="tagsinput" data-role="tagsinput" value="Solarsystem, USA" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-7">
+                  <div class="form_desc">
+                    <p>A collection is a group of image sets that are in the same style. This grouping will make it easier for users to find similar image sets.</p>
+                  </div>
+                </div>
+              </div>
+              
               
               <hr>
               <div style="text-align: right;">
@@ -230,12 +218,13 @@
 
     <!-- jQuery (necessary for Flat UI's JavaScript plugins) -->
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="./js/vendor/video.js"></script>
-    <script src="./js/flat-ui.min.js"></script>
+    
     <script src="./js/vendor/jquery.min.js"></script>
     <script src="js/jquery.mixitup.min.js"></script>
     <script src="js/photographer.js"></script> <!-- Resource jQuery -->
     <script src="js/custom-file-input.js"></script>
+    <script src="./js/vendor/video.js"></script>
+    <script src="./js/flat-ui.min.js"></script>
     <!-- // <script src="js/main.js"></script> -->
     
 
