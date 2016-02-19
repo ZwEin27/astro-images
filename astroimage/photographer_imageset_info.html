@@ -2,7 +2,7 @@
 <html lang="en" class="no-js">
   <head>
     <meta charset="utf-8">
-    <title>Phtographer Upload Page</title>
+    <title>Photographer Imageset Info Page</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="expires" content="0" />
@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="css/vendor/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/vendor/input-file-component.css">
 
-    <link rel="shortcut icon" href="images/favicon.ico">
+    <!-- <link rel="shortcut icon" href="images/favicon.ico"> -->
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
     <!--[if lt IE 9]>
@@ -36,7 +36,7 @@
         <div class="top_menu_container">
           <div class="top_menu_content_left">
               <div class="top_menu_logo">
-                AstroImages
+                <a href="index.html">ASTROIMAGES</a>
               </div>
               <div class="top_menu_search">
                 <div class="input-group">
@@ -48,7 +48,7 @@
 
           <div class="top_menu_content_right">
               <div class="top_menu_action_set">
-                <a href="#"><i class="fa fa-inverse fa-heart-o"></i></a>
+                <a href="#"><i class="fa fa-inverse fa-heart"></i></a>
                 <a href="#"><i class="fa fa-inverse fa-download"></i></a>
                 <a href="#"><i class="fa fa-inverse fa-user"></i>  ZwEin</a>
               </div>
@@ -64,7 +64,7 @@
       <main class="cd-main-content">
 
         <div class="cd-tab-filter-wrapper">
-          <div class="cd-tab-filter">
+          <div class="cd-tab-filter filter-is-visible">
             
             <div class="cd-tab-title">
               <h3> Image Set Information</h3>
@@ -73,7 +73,7 @@
         </div> <!-- cd-tab-filter-wrapper -->
 
 
-        <section class="cd-gallery">
+        <section class="cd-gallery filter-is-visible">
           <div class="content">
             <form>
               <div class="row">
@@ -134,7 +134,9 @@
               </div>
 
               <hr>
-              <div class="col-sm-5">
+
+              <div class="row">
+                <div class="col-sm-5">
                   <div class="form-group">
                     <label for="imageset_name">Tags</label>
                     <div style="clear:both;height:0;width:0"></div> 
@@ -145,15 +147,18 @@
                 </div>
                 <div class="col-sm-7">
                   <div class="form_desc">
-                    <p>A collection is a group of image sets that are in the same style. This grouping will make it easier for users to find similar image sets.</p>
+                    <p>Customized Tags, can be used for reviewers and users.</p>
                   </div>
                 </div>
               </div>
-              
-              
+
+            
               <hr>
+
               <div style="text-align: right;">
-                <button type="submit" class="btn btn-primary"> Continue</button>
+                <a href="photographer_images.html" class="btn btn-primary">
+                 Continue
+                </a>
               </div>
               
             </form>
@@ -161,7 +166,7 @@
           </div>
         </section> <!-- cd-gallery -->
        
-        <div class="cd-filter">
+        <div class="cd-filter filter-is-visible">
           <form>
             <!-- <div class="cd-filter-block">
               <h4>Search</h4>
@@ -198,10 +203,10 @@
 
               <ul class="cd-filter-content cd-filters list">
                 <li>
-                    <a href="#">Manage Image Set</a>
+                    <a href="photographer.html">Manage Image Set</a>
                 </li>
                 <li>
-                    <a href="#" style="color: #29BF57;">Upload</a>
+                    <a href="photographer_upload.html" style="color: #29BB9C;">Upload</a>
                 </li>
               </ul> <!-- cd-filter-content -->
             </div> <!-- cd-filter-block -->
@@ -213,7 +218,7 @@
           <!-- <a href="#0" class="cd-close">Close</a> -->
         </div> <!-- cd-filter -->
 
-        <a href="#0" class="cd-filter-trigger">Menu</a>
+        <a href="#0" class="cd-filter-trigger filter-is-visible">Menu</a>
       </main> <!-- cd-main-content -->
 
     <!-- jQuery (necessary for Flat UI's JavaScript plugins) -->

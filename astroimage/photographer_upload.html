@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="css/vendor/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/vendor/input-file-component.css">
 
-    <link rel="shortcut icon" href="images/favicon.ico">
+    <!-- <link rel="shortcut icon" href="images/favicon.ico"> -->
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
     <!--[if lt IE 9]>
@@ -36,7 +36,7 @@
         <div class="top_menu_container">
           <div class="top_menu_content_left">
               <div class="top_menu_logo">
-                AstroImages
+                <a href="index.html">ASTROIMAGES</a>
               </div>
               <div class="top_menu_search">
                 <div class="input-group">
@@ -48,7 +48,7 @@
 
           <div class="top_menu_content_right">
               <div class="top_menu_action_set">
-                <a href="#"><i class="fa fa-inverse fa-heart-o"></i></a>
+                <a href="#"><i class="fa fa-inverse fa-heart"></i></a>
                 <a href="#"><i class="fa fa-inverse fa-download"></i></a>
                 <a href="#"><i class="fa fa-inverse fa-user"></i>  ZwEin</a>
               </div>
@@ -64,7 +64,7 @@
       <main class="cd-main-content">
 
         <div class="cd-tab-filter-wrapper">
-          <div class="cd-tab-filter">
+          <div class="cd-tab-filter filter-is-visible">
             
             <div class="cd-tab-title">
               <h3> Upload Images</h3>
@@ -73,17 +73,26 @@
         </div> <!-- cd-tab-filter-wrapper -->
 
 
-        <section class="cd-gallery">
+        <section class="cd-gallery filter-is-visible">
           <div class="content">
             <div class="box">
               <input type="file" name="file-5[]" id="file-5" class="inputfile inputfile-4" data-multiple-caption="{count} files selected" multiple />
               <label for="file-5"><figure><svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"/></svg></figure> <span>Choose a file&hellip;</span></label>
             </div>
 
+            <hr>
+              
+            <div style="text-align: right;">
+              <a href="photographer_imageset_info.html" class="btn btn-primary">
+                Continue
+              </a>
+              
+            </div>
+
           </div>
         </section> <!-- cd-gallery -->
        
-        <div class="cd-filter">
+        <div class="cd-filter filter-is-visible">
           <form>
             <!-- <div class="cd-filter-block">
               <h4>Search</h4>
@@ -120,10 +129,10 @@
 
               <ul class="cd-filter-content cd-filters list">
                 <li>
-                    <a href="#">Manage Image Set</a>
+                    <a href="photographer.html">Manage Image Set</a>
                 </li>
                 <li>
-                    <a href="#" style="color: #29BF57;">Upload</a>
+                    <a href="photographer_upload.html" style="color: #29BB9C;">Upload</a>
                 </li>
               </ul> <!-- cd-filter-content -->
             </div> <!-- cd-filter-block -->
@@ -135,14 +144,14 @@
           <!-- <a href="#0" class="cd-close">Close</a> -->
         </div> <!-- cd-filter -->
 
-        <a href="#0" class="cd-filter-trigger">Menu</a>
+        <a href="#0" class="cd-filter-trigger filter-is-visible">Menu</a>
       </main> <!-- cd-main-content -->
 
     <!-- jQuery (necessary for Flat UI's JavaScript plugins) -->
     <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="./js/vendor/jquery.min.js"></script>
     <script src="./js/vendor/video.js"></script>
     <script src="./js/flat-ui.min.js"></script>
-    <script src="./js/vendor/jquery.min.js"></script>
     <script src="js/jquery.mixitup.min.js"></script>
     <script src="js/photographer.js"></script> <!-- Resource jQuery -->
     <script src="js/custom-file-input.js"></script>

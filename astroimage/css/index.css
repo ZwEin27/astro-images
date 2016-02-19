@@ -64,6 +64,7 @@ div.home_main_connent {
     /*background-color:#333;*/
     position: absolute;
     top: 18%;
+    color: #29BB9C;
 }
 
 div.home_icon {
@@ -94,7 +95,7 @@ div.home_desc {
  ********************************************************************/
 
 .nav a {
-    color: #176b96;
+    color: #29BB9C;
 }
 
 
@@ -146,13 +147,13 @@ div.right_content_wrapper {
     padding: 10px 10px;
 }
 
-div.content_top_wrapper {
+/*div.content_top_wrapper {
 
 }
 
 div.content_main_wrapper {
     
-}
+}*/
 
 
 

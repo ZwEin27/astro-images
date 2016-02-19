@@ -19,14 +19,15 @@ html * {
 }
 
 body {
-  font-size: 1.6rem;
-  font-family: "Open Sans", sans-serif;
-  color: #181A1D;
+  font-size: 1.5em;
+  font-family: Helvetica, Arial, "Open Sans", sans-serif;
+  /*color: #181A1D;*/
+  font-weight: 600;
   background-color: #e7e7e7;
 }
 
 a {
-  color: #41307c;
+  color: #2D2D2D;
   text-decoration: none;
 }
 
@@ -158,7 +159,7 @@ xtab-filter
   top: 0;
   left: 0;
   background-color: #ffffff;
-  box-shadow: inset 0 -2px 0 #41307c;
+  box-shadow: inset 0 -2px 0 #2D2D2D;
 }
 .cd-tab-filter li {
   display: none;
@@ -229,13 +230,13 @@ xtab-filter
     font-size: 1.3rem;
   }
   .no-touch .cd-tab-filter a:hover {
-    color: #41307c;
+    color: #2D2D2D;
   }
   .cd-tab-filter a.selected {
     background: transparent;
-    color: #41307c;
+    color: #2D2D2D;
     /* create border bottom using box-shadow property */
-    box-shadow: inset 0 -2px 0 #41307c;
+    box-shadow: inset 0 -2px 0 #2D2D2D;
   }
   .cd-tab-filter.is-open ul li {
     display: inline-block;
@@ -330,7 +331,7 @@ xfilter
   left: 0;
   width: 280px;
   height: 100%;
-  background: #ffffff;
+  /*background: #333;*/
   /*box-shadow: 4px 4px 20px transparent;*/
   z-index: 2;
   /* Force Hardware Acceleration in WebKit */
@@ -416,7 +417,7 @@ xfilter
   text-indent: 100%;
   color: transparent;
   white-space: nowrap;
-  background: transparent url("../img/cd-icon-filter.svg") no-repeat center center;
+  /*background: transparent url("../img/cd-icon-filter.svg") no-repeat center center;*/
   z-index: 3;
 }
 .cd-filter-trigger.filter-is-visible {
@@ -438,7 +439,7 @@ xfilter
     transition: color 0.3s;
   }
   .no-touch .cd-filter-trigger:hover {
-    color: #41307c;
+    color: #2D2D2D;
   }
   .cd-filter-trigger.filter-is-visible, .cd-filter-trigger.filter-is-visible:hover {
     color: #ffffff;
@@ -469,7 +470,7 @@ xcustom form elements
   cursor: pointer;
 }
 .no-touch .cd-filter-block h4:hover {
-  color: #41307c;
+  color: #2D2D2D;
 }
 .cd-filter-block h4::before {
   /* arrow */
@@ -479,7 +480,7 @@ xcustom form elements
   top: 50%;
   width: 16px;
   height: 16px;
-  background: url("../img/cd-icon-arrow.svg") no-repeat center center;
+  /*background: url("../img/cd-icon-arrow.svg") no-repeat center center;*/
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -500,10 +501,11 @@ xcustom form elements
 .cd-filter-block .radio-label::before,
 .cd-filter-block .checkbox-label::before {
   /* shared style for input elements */
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", Helvetica, Arial, "Open Sans", sans-serif;
   border-radius: 0;
   background-color: #ffffff;
-  border: 2px solid #e6e6e6;
+  border: 2px solid #29BB9C;
+  border-radius: 5px;
 }
 .cd-filter-block input[type='search'],
 .cd-filter-block input[type='text'],
@@ -522,7 +524,8 @@ xcustom form elements
 .cd-filter-block select:focus {
   outline: none;
   background-color: #ffffff;
-  border-color: #41307c;
+  border-color: #39CA74;
+  border-radius: 5px;
 }
 .cd-filter-block input[type='search'] {
   /* custom style for the search element */
@@ -553,7 +556,7 @@ xcustom form elements
   display: block;
   width: 16px;
   height: 16px;
-  background: url("../img/cd-icon-arrow.svg") no-repeat center center;
+  /*background: url("../img/cd-icon-arrow.svg") no-repeat center center;*/
   pointer-events: none;
 }
 .cd-filter-block select {
@@ -619,7 +622,7 @@ xcustom form elements
   /* check mark style for check boxes */
   width: 16px;
   height: 16px;
-  background: url("../img/cd-icon-check.svg") no-repeat center center;
+  /*background: url("../img/cd-icon-check.svg") no-repeat center center;*/
 }
 .cd-filter-block .radio-label::before,
 .cd-filter-block .radio-label::after {
@@ -634,8 +637,8 @@ xcustom form elements
 }
 .cd-filter-block input[type=radio]:checked + label::before,
 .cd-filter-block input[type=checkbox]:checked + label::before {
-  border-color: #41307c;
-  background-color: #41307c;
+  border-color: #29BB9C;
+  background-color: #29BB9C;
 }
 .cd-filter-block input[type=radio]:checked + label::after,
 .cd-filter-block input[type=checkbox]:checked + label::after {
@@ -675,6 +678,43 @@ xcustom form elements
 .uid_related {
   padding: 10px 0;
   text-align: center;
+}
+
+
+
+
+div.show-image {
+    position: relative;
+    float:left;
+    margin:5px;
+}
+div.show-image:hover img{
+    opacity:0.95;
+}
+div.show-image:hover a {
+    display: block;
+}
+/*div.show-image input {
+    position:absolute;
+    display:none;
+}*/
+
+a.btn_action_download {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    height: 40px;
+    width: 40px;
+    display:none;
+}
+
+a.btn_action_heart {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    height: 40px;
+    width: 40px;
+    display:none;
 }
 
 
